@@ -1,13 +1,14 @@
 import { Row, Col, Image, Button} from "antd";
 import React, { } from 'react';  
 import styled from "@emotion/styled";
+import { observer } from "mobx-react"
  
  
  
-const GeneralLayout = ( props) => {
+const GeneralLayout = (props) => {
 
     console.log("props.index");
-    console.log(props.index);
+    console.log(props);
 // src= "/assets/images/CardTwitter.png"
 
 // text= "/assets/images/CardTwitter.png"
@@ -18,12 +19,21 @@ const GeneralLayout = ( props) => {
 // onClickPlus= 
 // onClickMinus= 
 
+console.log("props.data");
 console.log(props.data);
     return (
         <div>
             <Row  justify="center" >
-                <Col>
-                    <Image src= {props.data.src}></Image>
+                <Col span={9}>
+                    <Image src= {props.data.src} 
+                            preview= {false}
+                            width={"100%"}
+
+                    >
+
+
+
+                    </Image>
                 </Col>
                 
             </Row>
@@ -31,15 +41,14 @@ console.log(props.data);
                 {props.data.text}
             </Row>
             <Row justify="center">
-                <Col>
-                <Button onClick={props.OnClickPlus}></Button>
-                
+                <Col pull={2}>
+                <Button onClick={props.OnClickMinus}></Button> 
                 </Col>
                 <Col>
                 <h1> {props.index + 1} de {props.indexTotal}</h1>
                 </Col>
-                <Col>
-                <h1> botao 2</h1>
+                <Col push={2}>
+                <Button onClick={props.OnClickPlus}></Button>
                 </Col>
             </Row>
         </div>
@@ -49,4 +58,4 @@ console.log(props.data);
 }
             
 
-export default GeneralLayout;
+export default observer(GeneralLayout);
