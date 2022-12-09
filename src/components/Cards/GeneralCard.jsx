@@ -80,12 +80,12 @@ function GeneralCard(props) {
               <Card hidden = {id>4}
                 hoverable
                 key={id}
-                style={{ width: 300, borderRadius: "20px" }}
-                bodyStyle={{ paddingTop: "0rem" }}
+                style={{ width: 300, borderRadius: "30px" }}
+                bodyStyle={{ paddingTop: "0px" }}
                 onClick={() => {
                   if (url !== "") window.open(url, "_self");
                 }}
-                title= {<Title level={5} style={{ textAlign: "center"}} >{title}</Title>}
+                title= {<Title level={4} style={{ textAlign: "center"}} >{title}</Title>}
               >
                 <Meta style={{"justify-content": "center", marginLeft: "16px"}}
                   avatar={
@@ -94,7 +94,7 @@ function GeneralCard(props) {
                       size={198}
                       style={{ marginTop: "2rem"}}
                       src={image}
-                      layout="fill"
+                      // layout= "fill"
                     />
                    
                   }
@@ -115,12 +115,12 @@ function GeneralCard(props) {
               <Card hidden = {id<5}
                 hoverable
                 key={id}
-                style={{ width: 300, borderRadius: "20px" }}
+                style={{ width: 300, borderRadius: "30px" }}
                 bodyStyle={{ paddingTop: "0rem" }}
                 onClick={() => {
                   if (url !== "") window.open(url, "_self");
                 }}
-                title= {<Title level={5} style={{ textAlign: "center"}} >{title}</Title>}
+                title= {<Title level={4} style={{ textAlign: "center"}} >{title}</Title>}
               >
                 <Meta style={{"justify-content": "center", marginLeft: "16px"}}
 

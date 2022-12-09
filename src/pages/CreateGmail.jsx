@@ -15,7 +15,6 @@ class Store {
     console.log(v);
     this.index = v;
   }
-
 }
 
 const store = new Store();
@@ -23,8 +22,8 @@ const store = new Store();
 
 const CreateGmail = () => { 
       
-    const data = [{src: "/assets/images/CardTwitter.png", text: "Texto Para escrever \n Linh2", key: 1},
-                  {src: "/assets/images/CardApp.png", text: "Texto2 Para escrever \n Linh2", key: 2}   
+    const data = [{src: "/assets/images/Gmail_1.png", text: "Etapa 1: escolher um tipo de Conta do Google \n Linh2", key: 1},
+                  {src: "/assets/images/Gmail_2.png", text: "Texto2 Para escrever \n Linh2", key: 2}   
                 ]
 
 
