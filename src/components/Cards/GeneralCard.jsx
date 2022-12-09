@@ -87,7 +87,7 @@ function GeneralCard(props) {
                 }}
                 title= {<Title level={4} style={{ textAlign: "center"}} >{title}</Title>}
               >
-                <Meta style={{"justify-content": "center", marginLeft: "16px"}}
+                <Meta style={{justifyContent: "center", marginLeft: "16px"}}
                   avatar={
                     <Avatar
                       shape="square"
@@ -122,7 +122,7 @@ function GeneralCard(props) {
                 }}
                 title= {<Title level={4} style={{ textAlign: "center"}} >{title}</Title>}
               >
-                <Meta style={{"justify-content": "center", marginLeft: "16px"}}
+                <Meta style={{justifyContent: "center", marginLeft: "16px"}}
 
                   avatar={
                     <Avatar

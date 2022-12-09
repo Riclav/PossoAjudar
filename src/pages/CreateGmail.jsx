@@ -21,9 +21,10 @@ const store = new Store();
 
 
 const CreateGmail = () => { 
-      
-    const data = [{src: "/assets/images/Gmail_1.png", text: "Etapa 1: escolher um tipo de Conta do Google \n Linh2", key: 1},
-                  {src: "/assets/images/Gmail_2.png", text: "Texto2 Para escrever \n Linh2", key: 2}   
+    const title = "GMail";
+    const data = [{src: "/assets/images/Gmail_1.png", text: "Etapa 1: escolher um tipo de Conta do Google sssssssssssssssssssssssssssssssssssssssssssssssssssss\n\
+                                                              sssssssssssssssssssssssssssssssssssssss Linh2", key: 1},
+                  {src: "/assets/images/Gmail_2.png", text: "Texto2 Para escrever\n Linh2", key: 2}   
                 ]
 
 
@@ -39,13 +40,11 @@ const CreateGmail = () => {
       store.setIndex(store.index < 0 ? 0 : store.index);
       
   }
-  console.log("actualIndex");
-  console.log(store.index);
 
   return (
     <div>
          
-        <GeneralLayout data = {data[store.index]}  OnClickPlus = {OnClickPlus} OnClickMinus = {OnClickMinus} index = {store.index} indexTotal = {data.length}/>
+        <GeneralLayout title = {title} data = {data[store.index]}  OnClickPlus = {OnClickPlus} OnClickMinus = {OnClickMinus} index = {store.index} indexTotal = {data.length}/>
          
     </div>     
   );

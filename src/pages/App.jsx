@@ -12,11 +12,9 @@ import {
 } from "react-router-dom";
  
 
-
-
 const { Header, Content, Footer, Sider } = Layout;
 
-
+let menuIndex = 0;
 
 const router = createBrowserRouter(
   [
@@ -54,17 +52,19 @@ const items = [
        
 ];
 
-function onClickMenu(event)
-{
-  if(event.key == 1){window.open("/", "_self");}
-  if(event.key == 2){window.open("/CreateGmail", "_self");}
-}
 
 
 const App = () => {
 
 
-  const [collapsed, setCollapsed] = useState(false);
+  function onClickMenu(event)
+  {
+  
+    if(event.key == 1){window.open("/", "_self");}
+    if(event.key == 2){window.open("/CreateGmail", "_self");}
+    menuIndex = event.key;
+  
+  }
 
   const {
     token: { colorBgSpotlight },
@@ -75,18 +75,18 @@ const App = () => {
 
   return (
     <Layout
-      style={{
-        minHeight: '100vh',
+      style={{ 
+        minHeight: '98.4vh',
       }}
-    >
-      <Sider collapsible  collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+    > 
+      <Sider >
         <div
           style={{
             height: 30,
             margin: 10,
           }}
-        />
-        <Menu  theme="dark" defaultSelectedKeys={[""]} mode="inline" items={items} onClick = {onClickMenu}/>
+        />   
+        <Menu  theme="dark"  mode="inline" items={items} onClick = {onClickMenu} />   
       </Sider>
       <Layout className="site-layout">
         <Header
@@ -94,11 +94,14 @@ const App = () => {
             padding: 0,
             background: colorBgSpotlight,
           }}
-        />
+        >
+teste
+</Header>
+
         
         <Content
           style={{
-            margin: '0 16px',
+            margin: '0 16px'
           }}
         >
           <Breadcrumb

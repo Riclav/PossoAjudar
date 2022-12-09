@@ -1,34 +1,22 @@
-import { Row, Col, Image, Button} from "antd";
+import { Row, Col, Image, Button, Typography} from "antd";
 import React, { } from 'react';  
-import styled from "@emotion/styled";
 import { observer } from "mobx-react"
 
 import { LeftOutlined, RightOutlined} from '@ant-design/icons';
 
- 
- 
+const { Title } = Typography;
  
 const GeneralLayout = (props) => {
 
-    console.log("props.index");
-    console.log(props);
-// src= "/assets/images/CardTwitter.png"
-
-// text= "/assets/images/CardTwitter.png"
-
-// index= "/assets/images/CardTwitter.png"
-// indexTotal= "/assets/images/CardTwitter.png"
-
-// onClickPlus= 
-// onClickMinus= 
-
-console.log("props.data");
-console.log(props.data);
     return ( 
         <>
             <div>
-                <Row  justify="center" >
-                    <Col span={9}>
+            <Row align={"middle"}   justify="center" style={{height: "40px", alignContent:"center" }}>
+                <Title level={2} style={{ textAlign: "center"}} >{props.title}</Title>
+                     
+                </Row>
+                <Row style={{height: "600px", alignContent:"center", justifyContent:"center" }}>
+                    <Col span={10}>
                         <Image src= {props.data.src} 
                                 preview= {false}
                                 width={"100%"}
@@ -36,30 +24,21 @@ console.log(props.data);
                         </Image>
                     </Col>                
                 </Row>
-            </div>
-            
-            <div>
-                <Row justify="center">
-                    {props.data.text}
+                <Row   style={{maxHeight: "80px", alignContent:"center" }}>
+                    <Col span={8} offset={0} >
+                <Title level={5} style={{ textAlign: "center"}} >{props.data.text}</Title>
+                    </Col>
                 </Row>
-            </div>
-            <div>
             
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-            
-                <Row justify="center">
+                <Row align={"middle"} justify="center" style={{height: "40px", alignContent:"baseline" }} >
                     <Col pull={2}>
-                    <Button icon=<LeftOutlined/> size={"large"} onClick={props.OnClickMinus}></Button> 
+                    <Button icon= {< LeftOutlined/>} size={"large"} onClick={props.OnClickMinus}></Button> 
                     </Col>
                     <Col>
                     <h1> {props.index + 1} de {props.indexTotal}</h1>
                     </Col>
                     <Col push={2}>
-                    <Button icon=<RightOutlined/> size={"large"} onClick={props.OnClickPlus}></Button>
+                    <Button icon= {< RightOutlined/>} size={"large"} onClick={props.OnClickPlus}></Button>
                     </Col>
                 </Row>
             </div>
