@@ -13,7 +13,7 @@ function GeneralCard(props) {
         {
           id: 1,
           title: "CRIAR UM EMAIL",
-          image: "/assets/images/CardGmail.png",
+          image: "/assets/images/Cards/CardGmail.png",
           url: "/CreateGmail",
           desc:"CRIAR UM EMAIL",
            
@@ -21,49 +21,49 @@ function GeneralCard(props) {
         {
           id: 2,
           title: "BAIXAR UM APP",
-          image: "/assets/images/CardApp.png",
+          image: "/assets/images/Cards/CardApp.png",
           url: "https://intranet.weg.net/br/motores/engenharia/change_number_text/src/index.html?lang=pt",
            
         },
         {
           id: 3,
           title: "FACEBOOK",
-          image: "/assets/images/CardFacebook.png",
+          image: "/assets/images/Cards/CardFacebook.png",
           url: "/checkList",
            
         },
         {
           id: 4,
           title: "INSTAGRAM",
-          image: "/assets/images/CardInstagram.png",
+          image: "/assets/images/Cards/CardInstagram.png",
           url: "",
            
         },
         {
             id: 5,
             title: "SKYPE",
-            image: "/assets/images/CardSkype.png",
+            image: "/assets/images/Cards/CardSkype.png",
             url: "https://www.myweg.net/irj/portal?NavigationTarget=pcd:portal_content/net.weg.folder.weg/net.weg.folder.core/net.weg.folder.roles/net.weg.role.ecc/net.weg.iview.ecc",
              
           },
           {
             id: 6,
             title: "TWITTER",
-            image: "/assets/images/CardTwitter.png",
+            image: "/assets/images/Cards/CardTwitter.png",
             url: "https://intranet.weg.net/br/motores/engenharia/change_number_text/src/index.html?lang=pt",
              
           },
           {
             id: 7,
             title: "YOUTUBE",
-            image: "/assets/images/CardYoutube.png",
+            image: "/assets/images/Cards/CardYoutube.png",
             url: "/checkList",
              
           },
           {
             id: 8,
             title: "WHATSAPP",
-            image: "/assets/images/CardWhatsapp.png",
+            image: "/assets/images/Cards/CardWhatsapp.png",
             url: "",
             
           },

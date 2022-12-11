@@ -22,9 +22,9 @@ const store = new Store();
 
 const CreateGmail = () => { 
     const title = "GMail";
-    const data = [{src: "/assets/images/Gmail_1.png", text: "Etapa 1: escolher um tipo de Conta do Google sssssssssssssssssssssssssssssssssssssssssssssssssssss\n\
+    const data = [{src: "/assets/images/Gmail/Gmail_1.png", text: "Etapa 1: escolher um tipo de Conta do Google sssssssssssssssssssssssssssssssssssssssssssssssssssss\n\
                                                               sssssssssssssssssssssssssssssssssssssss Linh2", key: 1},
-                  {src: "/assets/images/Gmail_2.png", text: "Texto2 Para escrever\n Linh2", key: 2}   
+                  {src: "/assets/images/Gmail/Gmail_2.png", text: "Texto2 Para escrever\n Linh2", key: 2}   
                 ]
 
 
