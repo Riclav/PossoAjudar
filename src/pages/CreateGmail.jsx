@@ -22,7 +22,7 @@ const store = new Store();
 
 const CreateGmail = () => { 
     const title = "GMail";
-    const data = [{src: "/assets/images/Gmail/Gmail_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta.", key: 1},
+    const data = [{src: "/assets/images/Gmail/Gmail_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta, como exemplo vamos criar uma conta pessoal.", key: 1},
                   {src: "/assets/images/Gmail/Gmail_2.png", text: "Etapa 2: Preencha os campos solicitados , e prossiga.", key: 2},  
                   {src: "/assets/images/Gmail/Gmail_3.png", text: "Etapa 3: Preencha seus dados, e prossiga", key: 2},
                   {src: "/assets/images/Gmail/Gmail_4.png", text: "Etapa 4: Informe seu número de celular para validar sua identidade, e prossiga.", key: 2},
