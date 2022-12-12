@@ -76,7 +76,7 @@ const App = () => {
   return (
     <Layout
       style={{ 
-        minHeight: '98.4vh',
+        minHeight: '100vh',
       }}
     > 
       <Sider >

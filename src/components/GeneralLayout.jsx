@@ -11,21 +11,22 @@ const GeneralLayout = (props) => {
     return ( 
         <>
             <div>
-            <Row align={"middle"}   justify="center" style={{height: "40px", alignContent:"center" }}>
-                <Title level={2} style={{ textAlign: "center"}} >{props.title}</Title>
+            <Row align={"middle"}   justify="center" style={{height: "30px", alignContent:"center" }}>
+                <Title level={3} style={{ textAlign: "center"}} >{props.title}</Title>
                      
                 </Row>
                 <Row style={{height: "600px", alignContent:"center", justifyContent:"center" }}>
                     <Col span={10}>
                         <Image src= {props.data.src} 
                                 preview= {false}
-                                width={"100%"}
+                                width={"650px"}
+                                
                         >
                         </Image>
                     </Col>                
                 </Row>
-                <Row   style={{maxHeight: "80px", alignContent:"center" }}>
-                    <Col span={8} offset={0} >
+                <Row   style={{maxHeight: "90px", alignContent:"center" }}>
+                    <Col span={10} offset={7} >
                 <Title level={5} style={{ textAlign: "center"}} >{props.data.text}</Title>
                     </Col>
                 </Row>
