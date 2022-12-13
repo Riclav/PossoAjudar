@@ -2,14 +2,21 @@ import React, { useState } from 'react';
 import {HomeOutlined,  GoogleOutlined, AppstoreAddOutlined, FacebookOutlined, InstagramOutlined,SkypeOutlined, TwitterOutlined, YoutubeOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, Row, Col } from 'antd';
 import GeneralCard from '../components/Cards/GeneralCard';
-
+import DownloadApp from './DownloadApp';
 import CreateGmail from '../pages/CreateGmail';
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import CreateFacebook from '../pages/CreateFacebook';
+import CreateInstagram from '../pages/CreateInstagram';
+import CreateSkype from '../pages/CreateSkype';
+import CreateTwitter from '../pages/CreateTwitter';
+import CreateYoutube from '../pages/CreateYoutube';
+import CreateWhatsapp from '../pages/CreateWhatsapp';
+
+
+
+
+
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+ 
  
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -19,7 +26,14 @@ let menuIndex = 0;
 const router = createBrowserRouter(
   [
     {path: "/", element: <GeneralCard/>, errorElement: "Erro Teste!"},
-    {path: "/CreateGmail", element: <CreateGmail/>, errorElement: "Erro T!"}
+    {path: "/CreateGmail", element: <CreateGmail/>, errorElement: "Erro T!"},
+    {path: "/DownloadApp", element: <DownloadApp/>, errorElement: "Erro T!"},
+    {path: "/CreateFacebook", element: <CreateFacebook/>, errorElement: "Erro T!"},
+    {path: "/CreateInstagram", element: <CreateInstagram/>, errorElement: "Erro T!"},
+    {path: "/CreateSkype", element: <CreateSkype/>, errorElement: "Erro T!"},
+    {path: "/CreateTwitter", element: <CreateTwitter/>, errorElement: "Erro T!"},
+    {path: "/CreateYoutube", element: <CreateYoutube/>, errorElement: "Erro T!"},
+    {path: "/CreateWhatsapp", element: <CreateWhatsapp/>, errorElement: "Erro T!"}
 
   ]
 
@@ -38,15 +52,15 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('INÍCIO', '1', <HomeOutlined />),
-  getItem('CRIAR GMAIL', '2', <GoogleOutlined />),
-  getItem('BAIXAR APP', '3', <AppstoreAddOutlined />),
-  getItem('FACEBOOK', '4', <FacebookOutlined /> ),
-  getItem('INSTAGRAM', '5', <InstagramOutlined /> ),
-  getItem('SKYPE', '6',    <SkypeOutlined />),
-  getItem('TWITTER', '7', <TwitterOutlined /> ),
-  getItem('YOUTUBE', '8',  <YoutubeOutlined />),
-  getItem('WHATSAPP', '9', <WhatsAppOutlined /> ),
+  getItem('INÍCIO', '0', <HomeOutlined />),
+  getItem('CRIAR GMAIL', '1', <GoogleOutlined />),
+  getItem('BAIXAR APP', '2', <AppstoreAddOutlined />),
+  getItem('FACEBOOK', '3', <FacebookOutlined /> ),
+  getItem('INSTAGRAM', '4', <InstagramOutlined /> ),
+  getItem('SKYPE', '5',    <SkypeOutlined />),
+  getItem('TWITTER', '6', <TwitterOutlined /> ),
+  getItem('YOUTUBE', '7',  <YoutubeOutlined />),
+  getItem('WHATSAPP', '8', <WhatsAppOutlined /> ),
 
 
        
@@ -60,8 +74,15 @@ const App = () => {
   function onClickMenu(event)
   {
   
-    if(event.key == 1){window.open("/", "_self");}
-    if(event.key == 2){window.open("/CreateGmail", "_self");}
+    if(event.key == 0){window.open("/", "_self");}
+    if(event.key == 1){window.open("/CreateGmail", "_self");}
+    if(event.key == 2){window.open("/DownloadApp", "_self");}
+    if(event.key == 3){window.open("/CreateFacebook", "_self");}
+    if(event.key == 4){window.open("/CreateInstagram", "_self");}
+    if(event.key == 5){window.open("/CreateSkype", "_self");}
+    if(event.key == 6){window.open("/CreateTwitter", "_self");}
+    if(event.key == 7){window.open("/CreateYoutube", "_self");}
+    if(event.key == 8){window.open("/CreateWhatsapp", "_self");}
     menuIndex = event.key;
   
   }

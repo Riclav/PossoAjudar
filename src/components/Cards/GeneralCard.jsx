@@ -15,56 +15,56 @@ function GeneralCard(props) {
           title: "CRIAR UM EMAIL",
           image: "/assets/images/Cards/CardGmail.png",
           url: "/CreateGmail",
-          desc:"CRIAR UM EMAIL",
+          
            
         },
         {
           id: 2,
           title: "BAIXAR UM APP",
           image: "/assets/images/Cards/CardApp.png",
-          url: "https://intranet.weg.net/br/motores/engenharia/change_number_text/src/index.html?lang=pt",
+          url: "/DownloadApp",
            
         },
         {
           id: 3,
           title: "FACEBOOK",
           image: "/assets/images/Cards/CardFacebook.png",
-          url: "/checkList",
+          url: "/CreateFacebook",
            
         },
         {
           id: 4,
           title: "INSTAGRAM",
           image: "/assets/images/Cards/CardInstagram.png",
-          url: "",
+          url: "/CreateInstagram",
            
         },
         {
             id: 5,
             title: "SKYPE",
             image: "/assets/images/Cards/CardSkype.png",
-            url: "https://www.myweg.net/irj/portal?NavigationTarget=pcd:portal_content/net.weg.folder.weg/net.weg.folder.core/net.weg.folder.roles/net.weg.role.ecc/net.weg.iview.ecc",
+            url: "/CreateSkype",
              
           },
           {
             id: 6,
             title: "TWITTER",
             image: "/assets/images/Cards/CardTwitter.png",
-            url: "https://intranet.weg.net/br/motores/engenharia/change_number_text/src/index.html?lang=pt",
+            url: "/CreateTwitter",
              
           },
           {
             id: 7,
             title: "YOUTUBE",
             image: "/assets/images/Cards/CardYoutube.png",
-            url: "/checkList",
+            url: "/CreateYoutube",
              
           },
           {
             id: 8,
             title: "WHATSAPP",
             image: "/assets/images/Cards/CardWhatsapp.png",
-            url: "",
+            url: "/CreateWhatsapp",
             
           },
       ];
