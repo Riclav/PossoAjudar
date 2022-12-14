@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateInstagram = () => { 
-    const title = "Instagram";
+    const title = "COMO CRIAR UMA CONTA NO INSTAGRAM";
     const data = [{src: "/assets/images/Instagram/Instagram_1.png", text: "Etapa 1: Acesse o site www.Instagram.com no seu navegador, preencha com seus dados e clique em Cadastrar-se.", key: 4},
                   {src: "/assets/images/Instagram/Instagram_2.png", text: "Etapa 2: Preencha com sua data de nascimento, e prossiga.", key: 4},  
                   {src: "/assets/images/Instagram/Instagram_3.png", text: "Etapa 3: Insira o código enviado ao seu email cadastrado anteriormente, e prossiga", key: 4},

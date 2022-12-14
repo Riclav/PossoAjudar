@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateSkype = () => { 
-    const title = "Skype";
+    const title = "COMO CRIAR UMA CONTA NO SKYPE?";
     const data = [{src: "/assets/images/Skype/Skype_1.png", text: "Etapa 1: Acesse o site www.skype.com no seu navegador, escolha se quer abri-lo no navegador ou baixá-lo para seu computador.", key: 5},
                   {src: "/assets/images/Skype/Skype_2.png", text: "Etapa 2: Clique em criar conta, e prossiga.", key: 5},  
                   {src: "/assets/images/Skype/Skype_3.png", text: "Etapa 3: Insira um email, e prossiga", key: 5},

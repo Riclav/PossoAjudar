@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateTwitter = () => { 
-    const title = "Twitter";
+    const title = "COMO CRIAR UMA CONTA NO TWITTER";
     const data = [{src: "/assets/images/Twitter/Twitter_1.png", text: "Etapa 1: Acesse o site www.twitter.com no seu navegador, e clique em inscreva-se, caso tenha conta Google, pode ser utilizada também.", key: 6},
                   {src: "/assets/images/Twitter/Twitter_2.png", text: "Etapa 2: Clique em Usar o email, e preencha os campos solicitados , e prossiga.", key: 6},  
                   {src: "/assets/images/Twitter/Twitter_3.png", text: "Etapa 3: Preencha conforme deseje, e prossiga", key: 6},

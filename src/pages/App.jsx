@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {HomeOutlined,  GoogleOutlined, AppstoreAddOutlined, FacebookOutlined, InstagramOutlined,SkypeOutlined, TwitterOutlined, YoutubeOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import {HomeOutlined,MessageOutlined, InfoCircleOutlined,  GoogleOutlined, AppstoreAddOutlined, FacebookOutlined, InstagramOutlined,SkypeOutlined, TwitterOutlined, YoutubeOutlined, WhatsAppOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme, Row, Col, Typography } from 'antd';
 import GeneralCard from '../components/Cards/GeneralCard';
 import DownloadApp from './DownloadApp';
@@ -10,12 +10,12 @@ import CreateSkype from '../pages/CreateSkype';
 import CreateTwitter from '../pages/CreateTwitter';
 import CreateYoutube from '../pages/CreateYoutube';
 import CreateWhatsapp from '../pages/CreateWhatsapp';
-
-
-
-
+import About from './About';
+import Contact from './Contact';
 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+
+
  
 const { Title } = Typography;
 
@@ -33,7 +33,9 @@ const router = createBrowserRouter(
     {path: "/CreateSkype", element: <CreateSkype/>, errorElement: "Erro T!"},
     {path: "/CreateTwitter", element: <CreateTwitter/>, errorElement: "Erro T!"},
     {path: "/CreateYoutube", element: <CreateYoutube/>, errorElement: "Erro T!"},
-    {path: "/CreateWhatsapp", element: <CreateWhatsapp/>, errorElement: "Erro T!"}
+    {path: "/CreateWhatsapp", element: <CreateWhatsapp/>, errorElement: "Erro T!"},
+    {path: "/About", element: <About/>, errorElement: "Erro T!"},
+    {path: "/Contact", element: <Contact/>, errorElement: "Erro T!"}
 
   ]
 
@@ -61,6 +63,8 @@ const items = [
   getItem('TWITTER', '6', <TwitterOutlined /> ),
   getItem('YOUTUBE', '7',  <YoutubeOutlined />),
   getItem('WHATSAPP', '8', <WhatsAppOutlined /> ),
+  getItem('SOBRE', '9', <InfoCircleOutlined /> ),
+  getItem('CONTATO', '10', <MessageOutlined /> )
 
 
        
@@ -83,6 +87,8 @@ const App = () => {
     if(event.key == 6){window.open("/CreateTwitter", "_self");}
     if(event.key == 7){window.open("/CreateYoutube", "_self");}
     if(event.key == 8){window.open("/CreateWhatsapp", "_self");}
+    if(event.key == 9){window.open("/About", "_self");}
+    if(event.key == 10){window.open("/Contact", "_self");}
     menuIndex = event.key;
   
   }
@@ -97,28 +103,27 @@ const App = () => {
   return (
     <Layout
       style={{ 
-        minHeight: '100vh',
-        background:"green"
+        minHeight: '98.4vh',
+       
       }}
     > 
-      <Sider style={{background:"blue"}} >
+      <Sider style={{background:"#0f1621"}} >
         <div
           style={{
             height: 30,
             margin: 10,
-            background:"pink"
+            
           }}
         />   
-        <Menu style={{background:"red"}} theme="dark"  mode="inline" items={items} onClick = {onClickMenu} />   
+        <Menu style={{background:"#0f1621"}} theme="dark"  mode="inline" items={items} onClick = {onClickMenu} />   
       </Sider>
-      <Layout className="site-layout">
+      <Layout   className="site-layout"> 
         <Header
           style={{
-            padding: 0,
-            background:"whitej",
+            background:"#233247",
           }}
         >
-        <Title level={2} style={{ textAlign: "center", textAlignLast:"auto"}} >{"POSSO AJUDAR?"}</Title>
+        <Title level={2} style={{textAlign:"center" ,color:"white"}} >{"POSSO AJUDAR?"}</Title>
 </Header>
 
         

@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateYoutube = () => { 
-    const title = "Youtube";
+    const title = "COMO LOGAR NO YOUTUBE?";
     const data = [{src: "/assets/images/Youtube/Youtube_1.png", text: "Etapa 1: Acesse o site www.youtube.com no seu navegador, e clique em Fazer login.", key: 8},
                   {src: "/assets/images/Youtube/Youtube_2.png", text: "Etapa 2: Insira um email google,e prossiga.", key: 8},  
                   {src: "/assets/images/Youtube/Youtube_3.png", text: "Etapa 3: Digite sua senha, e prossiga", key: 8},

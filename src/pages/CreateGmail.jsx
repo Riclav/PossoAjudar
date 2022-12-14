@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateGmail = () => { 
-    const title = "GMail";
+    const title = "COMO CRIAR UM EMAIL GOOGLE?";
     const data = [{src: "/assets/images/Gmail/Gmail_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta, como exemplo vamos criar uma conta pessoal.", key: 1},
                   {src: "/assets/images/Gmail/Gmail_2.png", text: "Etapa 2: Preencha os campos solicitados , e prossiga.", key: 1},  
                   {src: "/assets/images/Gmail/Gmail_3.png", text: "Etapa 3: Preencha seus dados, e prossiga", key: 1},

@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const DownloadApp = () => { 
-    const title = "DownloadApp";
+    const title = "COMO BAIXAR UM APLICATIVO NA PLAY STORE?";
     const data = [{src: "/assets/images/DownloadApp/App_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta, como exemplo vamos criar uma conta pessoal.", key:2},
                   {src: "/assets/images/DownloadApp/App_2.png", text: "Etapa 2: Preencha os campos solicitados , e prossiga.", key: 2},  
                   {src: "/assets/images/DownloadApp/App_3.png", text: "Etapa 3: Preencha seus dados, e prossiga", key: 2},

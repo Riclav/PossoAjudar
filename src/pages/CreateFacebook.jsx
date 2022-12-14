@@ -21,7 +21,7 @@ const store = new Store();
 
 
 const CreateFacebook = () => { 
-    const title = "Facebook";
+    const title = "COMO CRIAR UMA CONTA NO FACEBOOK?";
     const data = [{src: "/assets/images/Facebook/Facebook_1.png", text: "Etapa 1: Acesse o site www.facebook.com no seu navegador, preencha com seus dados e clique em Cadastrar-se.", key: 3},
                   {src: "/assets/images/Facebook/Facebook_2.png", text: "Etapa 2: Insira o código enviado ao seu email cadastrado anteriormente, e prossiga.", key: 3},  
                   {src: "/assets/images/Facebook/Facebook_3.png", text: "Etapa 3: Sua conta é confirmada, clique OK e prossiga.", key: 3},
