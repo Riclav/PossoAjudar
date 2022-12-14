@@ -16,21 +16,21 @@ const GeneralLayout = (props) => {
                      
                 </Row>
                 <Row style={{height: "600px", alignContent:"center", justifyContent:"center" }}>
-                    <Col span={10}>
+                    <Col span={8}>
                         <Image src= {props.data.src} 
                                 preview= {false}
-                                width={"650px"}
+                                width={"100%"}
                                 
                         >
                         </Image>
                     </Col>                
                 </Row>
-                <Row   style={{maxHeight: "90px", alignContent:"center" }}>
-                    <Col span={10} offset={7} >
-                <Title level={5} style={{ textAlign: "center"}} >{props.data.text}</Title>
+                <Row   style={{maxHeight: "100px", alignContent:"normal" }}>
+                    <Col span={12} offset={6} >
+                <Title level={5} style={{ textAlign: "justify", textAlignLast: "center"}} >{props.data.text}</Title>
                     </Col>
                 </Row>
-            
+                 
                 <Row align={"middle"} justify="center" style={{height: "40px", alignContent:"baseline" }} >
                     <Col pull={2}>
                     <Button icon= {< LeftOutlined/>} size={"large"} onClick={props.OnClickMinus}></Button> 
@@ -44,10 +44,7 @@ const GeneralLayout = (props) => {
                 </Row>
             </div>
         </>
-      
-         
-
-);
+    );
 }
             
 

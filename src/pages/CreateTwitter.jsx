@@ -27,7 +27,7 @@ const CreateTwitter = () => {
                   {src: "/assets/images/Twitter/Twitter_3.png", text: "Etapa 3: Preencha conforme deseje, e prossiga", key: 6},
                   {src: "/assets/images/Twitter/Twitter_4.png", text: "Etapa 4: Leia os termos e clique em Inscrever-se.", key: 6},
                   {src: "/assets/images/Twitter/Twitter_5.png", text: "Etapa 5: Informe o código que recebeu no email cadastrado e prossiga.", key: 6},                  
-                  {src: "/assets/images/Twitter/Twitter_6.png", text: "Etapa 6: Crie uma senha com 8 dígitos,e prossiga.", key: 6},
+                  {src: "/assets/images/Twitter/Twitter_6.png", text: "Etapa 6: Crie uma senha,e prossiga.", key: 6},
                   {src: "/assets/images/Twitter/Twitter_7.png", text: "Etapa 7: Escolha uma foto de perfil ou clique em ignorar.", key: 6},
                   {src: "/assets/images/Twitter/Twitter_8.png", text: "Etapa 8: Faça sua descrição ou clique em ignorar.", key: 6},
                   {src: "/assets/images/Twitter/Twitter_9.png", text: "Etapa 9: Informe o nome que gostaria de ser utilizado no seu perfil, ou clique em pular.", key: 6},

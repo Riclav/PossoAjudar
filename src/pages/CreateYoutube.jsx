@@ -22,11 +22,10 @@ const store = new Store();
 
 const CreateYoutube = () => { 
     const title = "Youtube";
-    const data = [{src: "/assets/images/Youtube/Youtube_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta, como exemplo vamos criar uma conta pessoal.", key: 8},
-                  {src: "/assets/images/Youtube/Youtube_2.png", text: "Etapa 2: Preencha os campos solicitados , e prossiga.", key: 8},  
-                  {src: "/assets/images/Youtube/Youtube_3.png", text: "Etapa 3: Preencha seus dados, e prossiga", key: 8},
-                  {src: "/assets/images/Youtube/Youtube_4.png", text: "Etapa 4: Informe seu número de celular para validar sua identidade, e prossiga.", key: 8},
-                  {src: "/assets/images/Youtube/Youtube_5.png", text: "Etapa 5: Informe o código que recebeu no celular cadastrado e prossiga.", key: 8}             
+    const data = [{src: "/assets/images/Youtube/Youtube_1.png", text: "Etapa 1: Acesse o site www.youtube.com no seu navegador, e clique em Fazer login.", key: 8},
+                  {src: "/assets/images/Youtube/Youtube_2.png", text: "Etapa 2: Insira um email google,e prossiga.", key: 8},  
+                  {src: "/assets/images/Youtube/Youtube_3.png", text: "Etapa 3: Digite sua senha, e prossiga", key: 8},
+                  {src: "/assets/images/Youtube/Youtube_4.png", text: "Etapa 4: Finalizando, já esstara logado, e pronto para utilização.", key: 8}     
                  
                 ]
 

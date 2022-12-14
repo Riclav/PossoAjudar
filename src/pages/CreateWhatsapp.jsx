@@ -21,10 +21,10 @@ const store = new Store();
 
 
 const CreateWhatsapp = () => { 
-    const title = "Whatsapp";
-    const data = [{src: "/assets/images/Whatsapp/Whatsapp_1.png", text: "Etapa 1: Acesse o site www.gmail.com no seu navegador, e clique em Criar conta, como exemplo vamos criar uma conta pessoal.", key: 8},
-                  {src: "/assets/images/Whatsapp/Whatsapp_2.png", text: "Etapa 2: Preencha os campos solicitados , e prossiga.", key: 8},  
-                  {src: "/assets/images/Whatsapp/Whatsapp_3.png", text: "Etapa 3: Preencha seus dados, e prossiga", key: 8}
+    const title = "COMO UTILIZAR O WHATSAPP WEB?";
+    const data = [{src: "/assets/images/Whatsapp/Whatsapp_1.png", text: "Etapa 1: Acesse o site www.whatsapp.com no seu navegador, temos a opção de abrir no navegador ou baixar para o computador. Clique em WhatsApp web e prossiga.", key: 8},
+                  {src: "/assets/images/Whatsapp/Whatsapp_2.png", text: "Etapa 2: Abra o aplicativo WhatsApp no seu celular e siga as informações da imagem.", key: 8},  
+                  {src: "/assets/images/Whatsapp/Whatsapp_3.png", text: "Etapa 3: Se optar pode assistir o video explicativo, assim que seu celular capturar o código QR a tela do aplicativo estará disponível para utilização.", key: 8}
                  
                 ]
 

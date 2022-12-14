@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {HomeOutlined,  GoogleOutlined, AppstoreAddOutlined, FacebookOutlined, InstagramOutlined,SkypeOutlined, TwitterOutlined, YoutubeOutlined, WhatsAppOutlined } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, theme, Row, Col } from 'antd';
+import { Breadcrumb, Layout, Menu, theme, Row, Col, Typography } from 'antd';
 import GeneralCard from '../components/Cards/GeneralCard';
 import DownloadApp from './DownloadApp';
 import CreateGmail from '../pages/CreateGmail';
@@ -17,7 +17,7 @@ import CreateWhatsapp from '../pages/CreateWhatsapp';
 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
  
- 
+const { Title } = Typography;
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -98,36 +98,40 @@ const App = () => {
     <Layout
       style={{ 
         minHeight: '100vh',
+        background:"green"
       }}
     > 
-      <Sider >
+      <Sider style={{background:"blue"}} >
         <div
           style={{
             height: 30,
             margin: 10,
+            background:"pink"
           }}
         />   
-        <Menu  theme="dark"  mode="inline" items={items} onClick = {onClickMenu} />   
+        <Menu style={{background:"red"}} theme="dark"  mode="inline" items={items} onClick = {onClickMenu} />   
       </Sider>
       <Layout className="site-layout">
         <Header
           style={{
             padding: 0,
-            background: colorBgSpotlight,
+            background:"whitej",
           }}
         >
-teste
+        <Title level={2} style={{ textAlign: "center", textAlignLast:"auto"}} >{"POSSO AJUDAR?"}</Title>
 </Header>
 
         
         <Content
           style={{
             margin: '0 16px'
+        
           }}
         >
           <Breadcrumb
             style={{
               margin: '16px 0',
+              background:"blue"
             }}
           >
             {/* <Breadcrumb.Item>User</Breadcrumb.Item>
