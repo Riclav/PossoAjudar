@@ -17,7 +17,7 @@ class Store {
   setIndex = (v) => {
     console.log(v);
     this.index = v;
-  }
+  } 
 }
 
 const store = new Store();
